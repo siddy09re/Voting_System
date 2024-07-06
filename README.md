@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Voting_System
+Created a responsive voting web app for a school using React.js, HTML, and CSS, hosted online with Firebase for data storage. It ensures single votes by removing buttons after selection and shows a 10-second "Thank You" message before resetting. A notification system confirms votes to students immediately after casting.
+>>>>>>> a12ec35d0a613e05ac08660856b63ceaf5b5218a
