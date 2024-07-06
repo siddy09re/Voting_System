@@ -1,0 +1,249 @@
+/* Card.css */
+.card_first {
+    border: 2px solid rgb(240, 224, 224);
+    height: auto;
+    width: 100%; /* Full width in parent container */
+    max-width: 42rem; /* Limit the max width */
+    margin-bottom: 0.5rem;
+    padding: 0.4rem;
+    border-radius: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    
+    text-align: center;
+    font-size: large;
+  }
+ 
+  
+  .card_second {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Allow items to wrap */
+    padding-bottom: 0.4rem;
+    
+
+  }
+  
+
+  .left,
+  .middle,
+  .right {
+    height: 17rem;
+    width: max-content;
+    border: 1px solid rgb(240, 224, 224);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+   
+    
+    
+  }
+  .left img{
+    height: 10rem;
+    width:10rem;
+    border-radius: 20px;
+  }
+  .middle img{
+    height: 10rem;
+    width:10rem;
+    border-radius: 20px;
+  }
+  .right img{
+    height: 10rem;
+    width:10rem;
+    border-radius: 20px;
+  }
+  .candidate-name
+ {
+color: aliceblue;
+font-size: 1.2rem;
+width: max-content;
+margin: 8px;
+}
+.sport{
+  color: aliceblue;
+  font-size: 1.5rem;
+  text-decoration:underline;
+}
+/* .thank-you img{
+  height: 21rem;
+  width: 45rem;
+  } */
+
+
+  
+
+
+  /* Thank You Animation */
+
+.thank-you-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18rem;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(135deg, #ffcc70 0%, #ff6f6f 100%);
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.thank-you-text {
+  font-family: 'Comfortaa', cursive;
+  font-size: 2.5rem;
+  color: white;
+  opacity: 0;
+  animation: textAppear 2s ease-in-out forwards;
+}
+
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.thank-you-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: backgroundPulse 3s infinite;
+}
+
+@keyframes backgroundPulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+.sparkle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  animation: sparkleAnimation 3s infinite ease-in-out;
+  pointer-events: none;
+}
+
+.sparkle:nth-child(1) {
+  top: 20%;
+  left: 30%;
+  animation-delay: 0.2s;
+}
+
+.sparkle:nth-child(2) {
+  top: 50%;
+  left: 70%;
+  animation-delay: 0.5s;
+}
+
+.sparkle:nth-child(3) {
+  top: 80%;
+  left: 50%;
+  animation-delay: 0.8s;
+}
+
+.sparkle:nth-child(4) {
+  top: 30%;
+  left: 60%;
+  animation-delay: 1.1s;
+}
+
+.sparkle:nth-child(5) {
+  top: 70%;
+  left: 20%;
+  animation-delay: 1.4s;
+}
+
+@keyframes sparkleAnimation {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+
+@media (max-width:680px) {
+
+  .left img{
+    height: 8rem;
+    width:8rem;
+    border-radius: 20px;
+  }
+  .middle img{
+    height: 8rem;
+    width:8rem;
+    border-radius: 20px;
+  }
+  .right img{
+    height: 8rem;
+    width:8rem;
+    border-radius: 20px;
+  }
+
+
+  .card_first {
+    border: 2px solid rgb(240, 224, 224);
+    height: auto;
+    width: 100%; /* Full width in parent container */
+    max-width: 20rem; /* Limit the max width */
+    margin-bottom: 0.5rem;
+    padding: 0.4rem;
+    border-radius: 2rem;
+    font: var(--kmt-sys-typography-h1-font);
+    
+    text-align: center;
+    font-size: large;
+  }
+  
+  .left,
+  .middle,
+  .right {
+    height: 14rem;
+    width: max-content;
+    border: 1px solid rgb(240, 224, 224);
+    border-radius: 20px;
+    
+    padding: 5px;
+   
+    
+    
+  }
+
+
+  .candidate-name
+  {
+ color: aliceblue;
+ font-size: 1rem;
+ }
+ .sport{
+   color: aliceblue;
+   font-size: 1.2rem;
+   text-decoration:underline;
+ }
+}

@@ -1,0 +1,41 @@
+/* Button Styles */
+
+.btn {
+    background-color: rgb(43, 124, 186); /* Light green background */
+    color: white; /* White text color */
+    /* margin: 5px; */
+    padding: 8px 16px; /* Slightly increased horizontal padding for better touch targets */
+    font-size: 1.1rem;
+    width: max-content;
+    align-self: center;
+    border: none; /* Removed border for a cleaner look */
+    border-radius: 10px; /* Added rounded corners */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* Hover State */
+.btn:hover {
+    background-color: rgb(52, 179, 52); /* Slightly darker green */
+    transform: translateY(-2px); /* Slightly elevate the button */
+}
+
+/* Active State */
+.btn:active {
+    background-color: rgb(69, 191, 69); /* Even darker green when clicked */
+    transform: translateY(0); /* Reset elevation */
+}
+
+/* Focus State */
+.btn:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(94, 65, 222, 0.5); /* Subtle green focus ring */
+}
+
+
+/* Adding Button Press Effect */
+.btn:active:enabled {
+    transform: scale(0.95); /* Slightly shrink on press */
+}
